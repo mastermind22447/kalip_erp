@@ -1,0 +1,4 @@
+backend/env
+backend/.env
+*.pyc
+backend/source/settings.py

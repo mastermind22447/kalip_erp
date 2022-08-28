@@ -1,0 +1,199 @@
+{% load i18n static %}
+
+<div class="sidebar" data-color="black" data-image="#">
+
+    <div class="sidebar-wrapper">
+        <div class="logo">
+            <a href="#" class="simple-text logo-mini">
+              KM
+            </a>
+            <a href="#" class="simple-text logo-normal">
+              KALIP MRP
+            </a>
+          </div>
+        <ul class="nav">
+            <li class="nav-item  active ">
+                <a class="nav-link" href="/">
+                    <i class="nc-icon nc-chart-pie-35"></i>
+                    <p>Dashboard</p>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link collapsed" data-toggle="collapse" href="#componentsExamples" aria-expanded="false">
+                    <i class="nc-icon nc-app"></i>
+                    <p>
+                        Siparişler
+                        <b class="caret"></b>
+                    </p>
+                </a>
+                <div class="collapse" id="componentsExamples" style="height: auto;">
+                    <ul class="nav">
+                        <li class="nav-item ">
+                            <a class="nav-link" href="{% url "new-order" %}">
+                                <span class="sidebar-mini">S</span>
+                                <span class="sidebar-normal">Sipariş Oluştur</span>
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="/ui-grid.html">
+                                <span class="sidebar-mini">E</span>
+                                <span class="sidebar-normal">Enj. Siparişler</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link collapsed" data-toggle="collapse" href="#formsExamples" aria-expanded="false">
+                    <i class="nc-icon nc-notes"></i>
+                    <p>
+                        Plastik enjeksiyon
+                        <b class="caret"></b>
+                    </p>
+                </a>
+                <div class="collapse" id="formsExamples" style="height: auto;">
+                    <ul class="nav">
+                        <li class="nav-item ">
+                            <a class="nav-link" href="/forms-regular.html">
+                                <span class="sidebar-mini">De</span>
+                                <span class="sidebar-normal">Devam Eden İşler</span>
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="/forms-extended.html">
+                                <span class="sidebar-mini">Mk</span>
+                                <span class="sidebar-normal">MAKİNE KALIP İŞ AKIŞI</span>
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="/forms-validation.html">
+                                <span class="sidebar-mini">Üü</span>
+                                <span class="sidebar-normal">Üretilecek Ürünler</span>
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="/forms-wizard.html">
+                                <span class="sidebar-mini">Yİ</span>
+                                <span class="sidebar-normal">Yeni İş Başlat</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link collapsed" data-toggle="collapse" href="#tablesExamples" aria-expanded="false">
+                    <i class="nc-icon nc-paper-2"></i>
+                    <p>
+                        Plastik Şişirme Pet
+                        <b class="caret"></b>
+                    </p>
+                </a>
+                <div class="collapse" id="tablesExamples" style="height: auto;">
+                    <ul class="nav">
+                        <li class="nav-item ">
+                            <a class="nav-link" href="/tables-regular.html">
+                                <span class="sidebar-mini">DE</span>
+                                <span class="sidebar-normal">Devam Eden İşler</span>
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="/tables-extended.html">
+                                <span class="sidebar-mini">MK</span>
+                                <span class="sidebar-normal">MAKİNE KALIP İŞ AKIŞI</span>
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="/tables-bootstrap.html">
+                                <span class="sidebar-mini">ÜÜ</span>
+                                <span class="sidebar-normal">Üretilecek Ürünler</span>
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="/tables-datatables.html">
+                                <span class="sidebar-mini">Yİ</span>
+                                <span class="sidebar-normal">Yeni İş Başlat</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+
+            <li class="nav-item ">
+                <a class="nav-link" href="/page-charts.html">
+                    <i class="nc-icon nc-chart-bar-32"></i>
+                    <p>Serigrafi</p>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link collapsed" data-toggle="collapse" href="#pagesExamples" aria-expanded="false">
+                    <i class="nc-icon nc-puzzle-10"></i>
+                    <p>
+                        Paket montaj
+                        <b class="caret"></b>
+                    </p>
+                </a>
+                <div class="collapse " id="pagesExamples" style="height: auto;">
+                    <ul class="nav">
+                        <li class="nav-item ">
+                            <a class="nav-link" href="/register/">
+                                <span class="sidebar-mini">DE</span>
+                                <span class="sidebar-normal">Devam Eden İşler</span>
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="/page-lock.html">
+                                <span class="sidebar-mini">Yi</span>
+                                <span class="sidebar-normal">Yapılacak işler</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link collapsed" data-toggle="collapse" href="#pagesExamples" aria-expanded="false">
+                    <i class="nc-icon nc-puzzle-10"></i>
+                    <p>
+                        Stok ve sevk
+                        <b class="caret"></b>
+                    </p>
+                </a>
+                <div class="collapse " id="pagesExamples" style="height: auto;">
+                    <ul class="nav">
+                        <li class="nav-item ">
+                            <a class="nav-link" href="/register/">
+                                <span class="sidebar-mini">AÜ</span>
+                                <span class="sidebar-normal">Ara Ürünler</span>
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="/page-lock.html">
+                                <span class="sidebar-mini">SÜ</span>
+                                <span class="sidebar-normal">SON ÜRÜNler</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            
+            <li class="nav-item ">
+                <a class="nav-link" href="/page-charts.html">
+                    <i class="nc-icon nc-chart-bar-32"></i>
+                    <p>bakım</p>
+                </a>
+            </li>
+            <li class="nav-item ">
+                <a class="nav-link" href="/page-calendar.html">
+                    <i class="nc-icon nc-single-copy-04"></i>
+                    <p>talepler</p>
+                </a>
+            </li>
+            <li class="nav-item ">
+                <a class="nav-link" href="/logout/">
+                    <i class="nc-icon nc-button-power"></i>
+                    <p>çıkış</p>
+                </a>
+            </li>
+                         
+        </ul>
+    </div>
+<div class="sidebar-background" style="background-image: url(&quot;{% static "images/tower.jpg" %}&quot;);"></div></div>

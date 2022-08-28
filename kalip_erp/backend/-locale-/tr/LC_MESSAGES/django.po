@@ -1,0 +1,160 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-03-07 16:44+0000\n"
+"PO-Revision-Date: 2022-03-07 20:06+0330\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: tr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Generator: Poedit 2.3\n"
+
+#: apps.py:7 models.py:23
+msgid "Molds"
+msgstr "Kalıp"
+
+#: models.py:8
+msgid "Mold code"
+msgstr "Kalıp kodu"
+
+#: models.py:9
+msgid "Mold name"
+msgstr "kalıp adı"
+
+#: models.py:10
+msgid "Technical detail"
+msgstr "Teknik özellikleri"
+
+#: models.py:11
+msgid "Security detail"
+msgstr "Güvenlik bilgi formu"
+
+#: models.py:12
+msgid "Created at"
+msgstr "Eklenme tarihi"
+
+#: models.py:13
+msgid "Updated at"
+msgstr "Güncellenmiş tarihi"
+
+#: models.py:14
+msgid "User"
+msgstr "Kullanıcı"
+
+#: models.py:22
+msgid "Mold"
+msgstr "Kalıp"
+
+#~ msgid "Location"
+#~ msgstr "Konum"
+
+#~ msgid "City name"
+#~ msgstr "İl"
+
+#~ msgid "City"
+#~ msgstr "İl"
+
+#~ msgid "Cities"
+#~ msgstr "İller"
+
+#~ msgid "Region name"
+#~ msgstr "İlçe"
+
+#~ msgid "Region"
+#~ msgstr "İlçe"
+
+#~ msgid "Regions"
+#~ msgstr "İlçeler"
+
+#~ msgid "Machines"
+#~ msgstr "Makine"
+
+#~ msgid "Machine code"
+#~ msgstr "Makine kodu"
+
+#~ msgid "Machine name"
+#~ msgstr "Makine adı"
+
+#~ msgid "Machine"
+#~ msgstr "Makine"
+
+#~ msgid "Order code"
+#~ msgstr "Sipariş kodu"
+
+#~ msgid "Company"
+#~ msgstr "Firma"
+
+#~ msgid "Product"
+#~ msgstr "Ürün"
+
+#~ msgid "Order amount"
+#~ msgstr "Sipariş adedi"
+
+#~ msgid "Finished at"
+#~ msgstr "Termın tarihi"
+
+#~ msgid "Order"
+#~ msgstr "Sipariş"
+
+#~ msgid "Orders"
+#~ msgstr "Siparişler"
+
+#~ msgid "title"
+#~ msgstr "Başlık"
+
+#~ msgid "address"
+#~ msgstr "adres"
+
+#~ msgid "city"
+#~ msgstr "İl"
+
+#~ msgid "addr"
+#~ msgstr "adres"
+
+#~ msgid "Cycle time"
+#~ msgstr "Çevrim süresi"
+
+#~ msgid "Color"
+#~ msgstr "Boya"
+
+#~ msgid "Color rate"
+#~ msgstr "Boya oranı"
+
+#~ msgid "Started at"
+#~ msgstr "Başlangıç tarihi"
+
+#~ msgid "Machine operator"
+#~ msgstr "Makine operatötü"
+
+#~ msgid "Quality control"
+#~ msgstr "Kalite kontrol "
+
+#~ msgid "Witness Sample Placed"
+#~ msgstr "Şahit numune konuldu"
+
+#~ msgid "Quality Control Form Posted"
+#~ msgstr "Kalite kontrol formu asıldı"
+
+#~ msgid "Work Order Posted"
+#~ msgstr "İş emri asıldı"
+
+#~ msgid "Required Knowledge/Education. given"
+#~ msgstr "Op. Gerekli Bilgi/Eğt. Verildi"
+
+#~ msgid "Detail"
+#~ msgstr "NOTLAR"
+
+#~ msgid "Workflow"
+#~ msgstr "İşlem"
+
+#~ msgid "Workflows"
+#~ msgstr "İşlemler"

@@ -1,0 +1,1 @@
+<input type="{{ widget.type }}" name="{{ widget.name }}" class="slug-input sss" data-to="{{widget.to}}" {% if widget.value != None %} value="{{ widget.value|stringformat:'s' }}"{% endif %}{% include "django/forms/widgets/attrs.html" %}>

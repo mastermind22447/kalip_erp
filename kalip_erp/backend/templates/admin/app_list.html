@@ -1,0 +1,80 @@
+{% load i18n %}
+{% load i18n static %}
+<style>
+    .sidebar, body>.navbar-collapse {
+        position: absolute;
+    }
+</style>
+<div class="sidebar" data-image="{% static "images/tower.jpg" %}"> 
+    <div class="sidebar-wrapper">
+        <div class="logo">
+            <a href="/" class="simple-text">
+                KALIP MRP YÖNEMİTİ
+            </a>
+        </div>
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+            {% if app_list %}
+                {% for app in app_list %}
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-heading-{{ app.app_label }}">
+                            <a class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse-{{ app.app_label }}" aria-expanded="false" aria-controls="flush-collapse-{{ app.app_label }}">
+                                {{ app.name }}
+                            </a>
+                        </h2>
+                        <div id="flush-collapse-{{ app.app_label }}" class="accordion-collapse collapse" aria-labelledby="flush-heading-{{ app.app_label }}" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <ul class="nav">
+                                    {% for model in app.models %}
+                                        <li class="nav-item">
+                                            <a href="{{ model.admin_url }}" class="nav-link">{{ model.name }}</a>
+                                        </li>
+                                    {% endfor %}
+                                    
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                {% endfor %}
+            {% endif %}
+        </div>
+    </div>
+</div>
+{% comment %} 
+{% if app_list %}
+  {% for app in app_list %}
+    <div class="app-{{ app.app_label }} module{% if app.app_url in request.path|urlencode %} current-app{% endif %}">
+      <table>
+        <caption>
+          <a href="{{ app.app_url }}" class="section" title="{% blocktranslate with name=app.name %}Models in the {{ name }} application{% endblocktranslate %}">{{ app.name }}</a>
+        </caption>
+        {% for model in app.models %}
+          <tr class="model-{{ model.object_name|lower }}{% if model.admin_url in request.path|urlencode %} current-model{% endif %}">
+            {% if model.admin_url %}
+              <th scope="row"><a href="{{ model.admin_url }}"{% if model.admin_url in request.path|urlencode %} aria-current="page"{% endif %}>{{ model.name }}</a></th>
+            {% else %}
+              <th scope="row">{{ model.name }}</th>
+            {% endif %}
+
+            {% if model.add_url %}
+              <td><a href="{{ model.add_url }}" class="addlink">{% translate 'Add' %}</a></td>
+            {% else %}
+              <td></td>
+            {% endif %}
+
+            {% if model.admin_url and show_changelinks %}
+              {% if model.view_only %}
+                <td><a href="{{ model.admin_url }}" class="viewlink">{% translate 'View' %}</a></td>
+              {% else %}
+                <td><a href="{{ model.admin_url }}" class="changelink">{% translate 'Change' %}</a></td>
+              {% endif %}
+            {% elif show_changelinks %}
+              <td></td>
+            {% endif %}
+          </tr>
+        {% endfor %}
+      </table>
+    </div>
+  {% endfor %}
+{% else %}
+  <p>{% translate 'You don’t have permission to view or edit anything.' %}</p>
+{% endif %} {% endcomment %}

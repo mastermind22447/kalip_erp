@@ -1,0 +1,74 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-03-08 16:23+0000\n"
+"PO-Revision-Date: 2022-03-08 12:42+0330\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: tr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Generator: Poedit 2.3\n"
+
+#: apps/company/apps.py:7 apps/company/models.py:24
+msgid "Companies"
+msgstr "Firmalar"
+
+#: apps/company/models.py:7
+msgid "Company name"
+msgstr "Ticari Ünvanı"
+
+#: apps/company/models.py:8
+msgid "Tax administration"
+msgstr "Vergi dairesi"
+
+#: apps/company/models.py:9
+msgid "Tax number"
+msgstr "Vergi numarasi"
+
+#: apps/company/models.py:10
+msgid "Billing address"
+msgstr "Fatura adresi"
+
+#: apps/company/models.py:11
+msgid "Shipping address"
+msgstr "Ürün sevk adresi"
+
+#: apps/company/models.py:12
+msgid "Region"
+msgstr "İlçesi"
+
+#: apps/company/models.py:13
+msgid "Telephone 1"
+msgstr "Telefon 1"
+
+#: apps/company/models.py:14
+msgid "Telephone 2"
+msgstr "Telefon 2"
+
+#: apps/company/models.py:15
+msgid "Description"
+msgstr "Tanım"
+
+#: apps/company/models.py:23
+msgid "Company"
+msgstr "Firma"
+
+#, fuzzy
+#~| msgid "5. Companies"
+#~ msgid "10. Companies"
+#~ msgstr "5. Firmalar"
+
+#~ msgid "5. Company"
+#~ msgstr "5. Firma"
+
+#~ msgid "Province"
+#~ msgstr "İli"

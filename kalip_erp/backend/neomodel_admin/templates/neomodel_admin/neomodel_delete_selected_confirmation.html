@@ -1,0 +1,74 @@
+{% extends "admin/base_site.html" %}
+{% load i18n l10n admin_urls static %}
+
+{% block extrahead %}
+    {{ block.super }}
+    {{ media }}
+    
+    <link href="/static/modeltranslation/css/tabbed_translation_fields.css" type="text/css" media="screen" rel="stylesheet">
+
+{% endblock %}
+
+{% block bodyclass %}delete-confirmation delete-selected-confirmation{% endblock %}
+{% if not is_popup %}
+{% block breadcrumbs %}
+<div class="breadcrumbs">
+<a href="{% url 'admin:index' %}">{% trans 'Home' %}</a>
+&rsaquo; <a href="/admin/neomodel/">NeoModel</a>
+&rsaquo; <a href="{{url}}">{{module_name}}</a>
+&rsaquo; Delete multiple objects
+</div>
+{% endblock %}
+{% endif %}
+
+{% block content %}
+
+<p>{% blocktrans %}Are you sure you want to delete the selected {{ module_name }}? {% endblocktrans %}</p>
+
+<h2>Summary</h2>
+<ul>
+    {% for key, value in total_count.items %}
+        <li>{{key}}: {{value}}</li>
+    {% endfor %}
+</ul>
+
+<h2>Objects</h2>
+<ul>
+    {% for d in data %}
+    <li>{{d.node.label}}: <a href="{% url 'neomodel-change' app=d.app_name model=d.model_name node_id=d.node.data.id %}">{{d.node.data}}</a></li>
+        <ul>
+            {% for row in d.relation_list %}
+            <li>{{row}}</li>                    
+            {% endfor %}
+        </ul>
+    {% endfor %}
+</ul>
+
+<form method="post">
+    {% csrf_token %}
+    <div>
+        {% for d in data %}
+            <input type="hidden" name="_selected_action" value="{{d.node.data.id}}">
+        {% endfor %}
+    <input type="hidden" name="action" value="delete_selected">
+    <input type="hidden" name="post" value="yes">
+    <input type="submit" value="Yes, I’m sure">
+    <a href="#" class="button cancel-link">No, take me back</a>
+    </div>
+</form>
+
+{% endblock %}
+
+
+
+{% block footer %}
+<script type="text/javascript" src="{% static 'admin/js/vendor/jquery/jquery.js' %}"></script>
+<script type="text/javascript" src="{% static 'admin/js/jquery.init.js' %}"></script>
+<script type="text/javascript" src="{% static 'admin/js/core.js' %}"></script>
+<script type="text/javascript" src="{% static 'admin/js/admin/RelatedObjectLookups.js' %}"></script>
+<script type="text/javascript" src="{% static 'admin/js/actions.js' %}"></script>
+<script type="text/javascript" src="{% static 'admin/js/urlify.js' %}"></script>
+<script type="text/javascript" src="{% static 'admin/js/prepopulate.js' %}"></script>
+<script type="text/javascript" src="{% static 'admin/js/vendor/xregexp/xregexp.js' %}"></script>
+<script type="text/javascript" src="{% static 'admin/js/cancel.js' %}"></script>
+{% endblock %}

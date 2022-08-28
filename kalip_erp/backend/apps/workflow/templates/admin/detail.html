@@ -1,0 +1,80 @@
+{% extends "admin/change_form.html" %}
+{% load i18n %}
+{% load humanize %}
+
+{% block content %}
+<div class="container">
+    <table class="table table-hover table-bordered">
+        <thead>
+            <tr>
+                <th colspan="2" style="line-height: 95px; font-size: 20px;">ÜRETİM BAŞLATMA BİLGİLERİ</th>
+                <th colspan="2"><img  style="width: 100px; height: 100px;" src={{ wf.product.image.url }} /></th>
+
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>BÖLÜMÜ</th>
+                <td>{{ wf.product.product_type }}</td>
+                <th>HAMMADDE KODU</th>
+                <td>{{ wf.product.material.code }}</td>
+            </tr>
+            <tr>
+                <th>MAKİNE NO</th>
+                <td>{{ wf.machine.code }}</td>
+                <th>HAMMADDE ADI</th>
+                <td>{{ wf.product.material.name }}</td>
+            </tr>
+            <tr>
+                <th>MAKİNE ADI</th>
+                <td>{{ wf.machine.name }}</td>
+                <th>&nbsp;</th>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <th>KALIP ADI</th>
+                <td>{{ wf.mold.name }}</td>
+                <th>BOYA TEDARİKCİ ADI</th>
+                <td>???</td>
+            </tr>
+            <tr>
+                <th>KALIP KODU</th>
+                <td>{{ wf.mold.code }}</td>
+                <th>RENK ADI</th>
+                <td> <span style="background-color: {{ wf.color.color }}; border: 1px solid #ccc; width: 50px; height: 17px; border-radius: 6px; display: block; float: left" >&nbsp;</span>&nbsp;{{ wf.color }} </td>
+            </tr>
+            <tr>
+                <th>ÜRÜN ADI</th>
+                <td>{{ wf.product }}</td>
+                <th>BOYA KODU</th>
+                <td>{{ wf.color.code }}</td>
+            </tr>
+            <tr>
+                <th>ÜRÜN KODU</th>
+                <td>{{ wf.product.code }}</td>
+                <th>BOYA ORANI</th>
+                <td>{{ wf.color_rate }}%</td>
+            </tr>
+            <tr>
+                <th>ÇEVRİM SÜRESİ</th>
+                <td>{{ wf.cycle_time }} SN</td>
+                <th>MAKİNE OPERATÖRÜ</th>
+                <td>{{ wf.machine_operator }}</td>
+            </tr>
+            <tr>
+                <th>GÖZ SAYISI</th>
+                <td>{{ wf.mold.eye_count }}</td>
+                <th>KALİTE KONTROL</th>
+                <td>{{ wf.quality_control }}</td>
+            </tr>
+            <tr>
+                <th>BAŞLAMA TARİH VE SAATİ</th>
+                <td>{{ wf.started_at }}</td>
+                <th>ÜRETİLECEK HEDEF SAYI</th>
+                <td>{{ wf.order.order_amount|intcomma }}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+{% endblock %}

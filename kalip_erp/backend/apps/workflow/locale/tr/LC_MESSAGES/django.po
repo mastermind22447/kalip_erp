@@ -1,0 +1,112 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-03-08 16:23+0000\n"
+"PO-Revision-Date: 2022-03-08 19:28+0330\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: tr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Generator: Poedit 2.3\n"
+
+#: apps/workflow/admin.py:15
+msgid "Type"
+msgstr "Tip"
+
+#: apps/workflow/apps.py:7 apps/workflow/models.py:43
+msgid "Workflows"
+msgstr "İşlemler"
+
+#: apps/workflow/models.py:13
+msgid "Order"
+msgstr "Sipariş"
+
+#: apps/workflow/models.py:14 apps/workflow/models.py:17
+msgid "Product"
+msgstr "Ürün"
+
+#: apps/workflow/models.py:15
+msgid "Machine"
+msgstr "Makine"
+
+#: apps/workflow/models.py:16
+msgid "Mold"
+msgstr "Kalıp"
+
+#: apps/workflow/models.py:18
+msgid "Cycle time"
+msgstr "Çevrim süresi"
+
+#: apps/workflow/models.py:19
+msgid "Color"
+msgstr "Boya"
+
+#: apps/workflow/models.py:20
+msgid "Color rate"
+msgstr "Boya oranı"
+
+#: apps/workflow/models.py:21
+msgid "Started at"
+msgstr "Başlangıç tarihi"
+
+#: apps/workflow/models.py:22
+msgid "Machine operator"
+msgstr "Makine operatötü"
+
+#: apps/workflow/models.py:23
+msgid "Quality control"
+msgstr "Kalite kontrol"
+
+#: apps/workflow/models.py:24
+msgid "Witness Sample Placed"
+msgstr "Şahit numune konuldu"
+
+#: apps/workflow/models.py:25
+msgid "Quality Control Form Posted"
+msgstr "Kalite kontrol formu asıldı"
+
+#: apps/workflow/models.py:26
+msgid "Work Order Posted"
+msgstr "İş emri asıldı"
+
+#: apps/workflow/models.py:27
+msgid "Required Knowledge/Education. given"
+msgstr "Op. Gerekli Bilgi/Eğt. Verildi"
+
+#: apps/workflow/models.py:28
+msgid "Detail"
+msgstr "Notlar"
+
+#: apps/workflow/models.py:30
+msgid "Created by"
+msgstr "Tarafından yaratıldı"
+
+#: apps/workflow/models.py:31
+msgid "Updated by"
+msgstr "Tarafından güncellendi"
+
+#: apps/workflow/models.py:33
+msgid "Created at"
+msgstr "Eklenme tarihi"
+
+#: apps/workflow/models.py:34
+msgid "Updated at"
+msgstr "Güncellenmiş tarihi"
+
+#: apps/workflow/models.py:42
+msgid "Workflow"
+msgstr "İşlem"
+
+#, fuzzy
+#~| msgid "Workflows"
+#~ msgid "8. Workflows"
+#~ msgstr "İşlemler"

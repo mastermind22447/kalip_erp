@@ -1,0 +1,201 @@
+{% extends "layouts/base.html" %}
+
+{% block title %} Sipariş Oluştur {% endblock %} 
+
+<!-- Specific Page CSS goes HERE  -->
+{% block stylesheets %}{% endblock stylesheets %}
+
+{% block content %}
+
+    <div class="content">
+        <div class="container-fluid">
+            <form class="form-horizontal">
+                <div class="row">
+
+                    <div class="col-md-12">
+                        <div class="card horizontal-form">
+                            <div class="card-header ">
+                                <h4 class="card-title">Sipariş Oluştur</h4>
+                            </div>
+
+                            <div class="card-body" style="border-bottom: 1px solid #ddd;">
+                                <form class="form-horizontal">
+                                    <div class="row">
+
+                                        <div class="col-sm-4">
+                                            <div class="form-group">
+                                                <div class="row">
+                                                    <label class="col-md-4 control-label">FİRMA ADI</label>
+                                                    <div class="col-md-8">
+                                                        <input type="text" placeholder="FİRMA ADI" class="form-control">
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <div class="row">
+                                                    <label class="col-md-4 control-label">ÜRÜN ADI</label>
+                                                    <div class="col-md-8">
+                                                        <input type="text" placeholder="ÜRÜN ADI" class="form-control">
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="col-sm-4">
+
+                                            <div class="form-group">
+                                                <div class="row">
+                                                    <label class="col-md-5 control-label">SİPARİŞ ADEDİ</label>
+                                                    <div class="col-md-7">
+                                                        <input type="text" placeholder="SİPARİŞ ADEDİ" class="form-control">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <div class="row">
+                                                    <label class="col-md-5 control-label">ÜRÜN KODU</label>
+                                                    <div class="col-md-7">
+                                                        <input type="text" placeholder="ÜRÜN KODU" class="form-control">
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="col-sm-4">
+
+                                            <div class="form-group">
+                                                <div class="row">
+                                                    <label class="col-md-5 control-label">SİPARİŞ TARİHİ</label>
+                                                    <div class="col-md-7">
+                                                        <input id="datetimepicker" type="text" class="form-control datetimepicker" placeholder="Datetime Picker Here">
+                                                    </div>
+                                                    {% comment %} <div class="col-md-7">
+                                                        <div class="form-group">
+                                                            <input id="datetimepicker" type="text" class="form-control datetimepicker" placeholder="SİPARİŞ TARİHİ">
+                                                        </div>
+                                                    </div> {% endcomment %}
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <div class="row">
+                                                    <label class="col-md-5 control-label">TESLİM TARİHİ</label>
+                                                    <div class="col-md-7">
+                                                        <input id="datetimepicker" type="text" class="form-control datetimepicker" placeholder="Datetime Picker Here">
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                </form>
+                            </div>
+
+                      
+                            <div class="card-header ">
+                                <h4 class="card-title">REÇETESİZ ÜRÜN</h4>
+                            </div>
+                            <div class="card-body ">
+                                <div class="row">
+                                    <div class="col">
+                                        <label class="title">ÜRÜN ADI</label>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="ÜRÜN ADI">
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <label class="title">ÜRÜN KODU</label>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="ÜRÜN KODU">
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <label class="title">HAM MADDESİ</label>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="HAM MADDESİ">
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <label class="title">GRAMAJI</label>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="GRAMAJI">
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <label class="title">RENK ADI</label>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="RENK ADI">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <label class="title">RENK KODU</label>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="RENK KODU">
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <label class="title">RENK ORANI</label>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="RENK ORANI">
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <label class="title">RENK TEDARİKCİSİ </label>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="RENK TEDARİKCİSİ ">
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <label class="title">ÜRETİM BÖLÜMÜ</label>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="ÜRETİM BÖLÜMÜ">
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <label class="title">SERİGRAFİ YAPILACAK PARÇA</label>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="SERİGRAFİ YAPILACAK PARÇA">
+                                        </div>
+                                    </div>
+
+                                </div>
+                            
+                            </div>
+                            <div class="card-footer ">
+                                <button type="submit" class="btn btn-fill btn-info">Submit</button>
+                            </div>
+                        </div>
+                    </div>
+                </div> <!-- row -->
+
+                <div class="row">
+                    <div class="col-md-4">
+                        <h4 class="title">Datetime Picker</h4>
+                        <div class="form-group">
+                            <input id="datetimepicker" type="text" class="form-control datetimepicker" placeholder="Datetime Picker Here">
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <h4 class="title">Date Picker</h4>
+                        <div class="form-group">
+                            <input type="text" class="form-control datepicker" placeholder="Date Picker Here">
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <h4 class="title">Time Picker</h4>
+                        <div class="form-group">
+                            <input type="text" class="form-control timepicker" placeholder="Time Picker Here">
+                        </div>
+                    </div>
+                </div>
+
+            </form>
+        </div>
+    </div>
+
+{% endblock %}

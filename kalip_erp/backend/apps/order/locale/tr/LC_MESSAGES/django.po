@@ -1,0 +1,95 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-03-08 16:23+0000\n"
+"PO-Revision-Date: 2022-03-08 19:01+0330\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: tr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Generator: Poedit 2.3\n"
+
+#: apps/order/apps.py:7 apps/order/models.py:35
+msgid "Orders"
+msgstr "Siparişler"
+
+#: apps/order/models.py:10 apps/order/models.py:41
+msgid "New orders"
+msgstr "Yeni siparişler"
+
+#: apps/order/models.py:11 apps/order/models.py:48
+msgid "Open orders"
+msgstr "Açık siparişler"
+
+#: apps/order/models.py:12 apps/order/models.py:55
+msgid "Closed orders"
+msgstr "Kapnan siparişler"
+
+#: apps/order/models.py:13 apps/order/models.py:62
+msgid "Returned orders"
+msgstr "İadeler"
+
+#: apps/order/models.py:17
+msgid "Order code"
+msgstr "Sipariş kodu"
+
+#: apps/order/models.py:18
+msgid "Company"
+msgstr "Firma"
+
+#: apps/order/models.py:19 apps/order/models.py:24
+msgid "Product"
+msgstr "Ürün"
+
+#: apps/order/models.py:20
+msgid "Order amount"
+msgstr "Sipariş adedi"
+
+#: apps/order/models.py:21
+msgid "Created at"
+msgstr "Eklenme tarihi"
+
+#: apps/order/models.py:22
+msgid "Updated at"
+msgstr "Güncellenmiş tarihi"
+
+#: apps/order/models.py:23
+msgid "Finished at"
+msgstr "Termın tarihi"
+
+#: apps/order/models.py:25
+msgid "Status"
+msgstr "Durum"
+
+#: apps/order/models.py:26
+msgid "User"
+msgstr "Kullanıcı"
+
+#: apps/order/models.py:34
+msgid "Order"
+msgstr "Sipariş"
+
+#: apps/order/models.py:40
+msgid "New order"
+msgstr "Yeni sipariş"
+
+#: apps/order/models.py:47
+msgid "Open order"
+msgstr "Açık sipariş"
+
+#: apps/order/models.py:54
+msgid "Closed order"
+msgstr "Kapanan sipariş"
+
+#: apps/order/models.py:61
+msgid "Returned order"
+msgstr "İade olan sipariş"
